@@ -23,9 +23,6 @@ public class Main {
     public final static String nextClueUserText = "\n" + "Let's take a look at your next clue:" + "\n\n";
     private final static String displayAnswerTextFormatting = "\n" + "The correct response is:" + "\n\n";
     public static int userScore = 0;
-  
-    /*Mike A helped determine correct API URL to get individual clues from
-    also helped condense some lines in CustomHttpClient*/
 
     private static ClueDTO getClueOne() throws IOException {
         String jsonString = CustomHttpClient.sendGET(GET_URL_API_1);
